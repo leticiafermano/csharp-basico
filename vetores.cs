@@ -1,10 +1,10 @@
-using System;
-using System.Globalization;
-
 namespace ExercicioAula24_CSharp
 {
     class Program
     {
+        /* ARRAY E VETORES
+             Vetores (ARRAYS) --> É uma estrutura que permite armazenar informações de forma sequenciada. */
+
         static void Main(string[] args)
         {
             string nome = Console.ReadLine();
@@ -30,4 +30,18 @@ namespace ExercicioAula24_CSharp
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
         }
     }
+
+    // ------------------------------->>><<<----------------------------------------
+
+            string[] nomes = { "João", "Maria", "Jose", "Anegla", "Vanderlucio" };
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                Console.WriteLine(nomes[i]);
+            }
+
+            double[] valores = { 145, 10, 20, 50, 26 };
+            for (int i = 0; i < valores.Length; i++)
+            {
+                Console.WriteLine(valores[i]);
+            }
 }
